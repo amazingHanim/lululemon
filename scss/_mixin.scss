@@ -1,0 +1,9 @@
+@mixin width {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1400px;
+}
+
+@function aaa($a,$b,$c){
+    @return ($a * $b)+$c + ($b*10)
+}

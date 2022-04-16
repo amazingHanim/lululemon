@@ -1,0 +1,319 @@
+@import url(../css/font.css);
+.hdrWrap > header, .content > header, .content > section {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1400px;
+}
+
+.hdrWrap > header.nowth, .content > header.nowth, .content > section.nowth {
+  margin: inherit;
+  width: 100%;
+  max-width: none;
+}
+
+.moreBtn {
+  padding: 0 40px;
+  font-size: 16px;
+  line-height: 40px;
+  background-color: #292929;
+  border: none;
+  color: #fff;
+  font-family: "Noto Sans KR";
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.moreBtn.line {
+  color: #fff;
+  border: solid 1px #fff;
+  background-color: transparent;
+}
+
+.hdrWrap {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hdrWrap header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hdrWrap header h1.logo {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hdrWrap header h1.logo img {
+  height: 60%;
+}
+
+.hdrWrap header ul.mainMenu {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hdrWrap header ul.mainMenu li {
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  line-height: 80px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.hdrWrap header .icons {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hdrWrap header .icons i {
+  color: #fff;
+}
+
+.mnWrap {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../images/mainBg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+}
+
+.mnWrap video {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  width: 100%;
+  bottom: 2px;
+}
+
+.content {
+  padding: 80px 0;
+  width: 100%;
+}
+
+.content header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 250px;
+  text-align: center;
+}
+
+.content header h2 {
+  font-family: "Raleway";
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.content header h3 {
+  opacity: 50%;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.content section {
+  padding: 40px 0;
+}
+
+.content.best section .ovrgrid {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  margin-left: calc((100% - 1400px)/2);
+}
+
+.content.best section .ovrgrid ul.itemList {
+  width: 2420;
+  position: absolute;
+  top: 0;
+  left: -210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content.best section .ovrgrid ul.itemList li {
+  margin-right: 10px;
+  width: 210px;
+  height: 300px;
+  background-color: #999;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.content.best section .ovrgrid ul.itemList li.on {
+  width: 440px;
+}
+
+.content.best section ul.pageNation {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  height: 4px;
+  background-color: #ebebeb;
+  margin-top: 80px;
+}
+
+.content.best section ul.pageNation li {
+  color: transparent;
+  height: 100%;
+  width: 100%;
+}
+
+.content.best section ul.pageNation li.on {
+  background-color: #292929;
+}
+
+.content.new {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1vw;
+  height: 850px;
+}
+
+.content.new header {
+  overflow: hidden;
+  width: 40%;
+  height: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.content.new header .imgBox {
+  width: 100%;
+}
+
+.content.new header .imgBox img {
+  width: 100%;
+}
+
+.content.new header .txtBox {
+  width: 100%;
+  height: 500px;
+  min-height: 250px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #292929;
+  color: #fff;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.content.new section {
+  width: 60%;
+  height: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content.new section article {
+  width: calc((100% - 2vw)/3);
+  height: 50%;
+}
+
+.content.new section article .imgBox {
+  height: 80%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content.new section article .imgBox img {
+  height: 100%;
+}
+
+.content.new section article .txtbox {
+  height: 20%;
+}
+
+@media screen and (max-width: 1750px) {
+  body .content.best section .ovrgrid {
+    margin-left: 10%;
+  }
+}
