@@ -5,5 +5,8 @@
 }
 
 @function aaa($a,$b,$c){
-    @return ($a * $b)+$c + ($b*10)
+    @return ($a * $b)+$c + ($b*7)
 }
+
+$black : #292929;
+

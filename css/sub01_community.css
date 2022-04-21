@@ -1,0 +1,197 @@
+@import url(../css/font.css);
+.subBannerWrap {
+  background-image: url(../images/commu_bg.png);
+}
+
+.content {
+  padding: 80px 0;
+}
+
+.content header {
+  padding: 40px 0;
+}
+
+.content header h3 {
+  font-family: "Raleway";
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 300;
+  margin: 0;
+  position: relative;
+}
+
+.content header h3::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 35px;
+  height: 20px;
+  top: 3px;
+  left: 0px;
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.content section {
+  padding: 40px 0;
+}
+
+.content section h4 {
+  margin-top: 30px;
+  font-family: "Noto Sans KR";
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.content section p {
+  margin-top: 20px;
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  opacity: 0.7;
+}
+
+.content.mapAttack section ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.content.mapAttack section ul li {
+  width: calc(100%/3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content.mapAttack section ul li .img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.content.mapAttack section ul li .img img {
+  height: 100%;
+}
+
+.content.mapAttack section ul li .txt {
+  text-align: center;
+}
+
+.content.mapAttack section ul li .txt h4 {
+  color: #292929;
+}
+
+.content.guide {
+  background-image: url(../images/commu_banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 930px;
+  width: 100%;
+  position: relative;
+}
+
+.content.guide::after {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  content: "";
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.content.guide .inr {
+  padding: 80px 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.content.guide .inr header {
+  color: #fff;
+}
+
+.content.guide .inr section {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.content.guide .inr section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content.guide .inr section ul li {
+  margin-top: 10px;
+}
+
+.content.program section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5px;
+}
+
+.content.program section article {
+  width: calc(50% - 5px);
+}
+
+.content.program section article .img {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content.program section article .img img {
+  width: 100%;
+}
+
+.content.program section article .txt {
+  padding: 40px 0;
+}
+
+.content.program section article .txt h4 {
+  margin-top: 0;
+}
+
+.content.program section article .txt span {
+  display: block;
+  margin-top: 20px;
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.content.program section article .txt span.account {
+  text-decoration: underline;
+}
