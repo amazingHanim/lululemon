@@ -179,7 +179,7 @@
                 box-sizing: border-box;
 
                 .img {
-                    height: 250px;
+                    height: 15vw;
                     width: 100%;
                     overflow: hidden;
                     display: flex;
@@ -187,7 +187,7 @@
                     align-items: flex-end;
 
                     img {
-                        height: 100%;
+                        width: 100%;
                     }
                 }
 
@@ -221,12 +221,15 @@
             section{
                 article{
                     width: 50%;
+                    .img{
+                        height: 30vw;
+                    }
                 }
             }
         }
         &.guide{
             &::after{
-                width: 70%;
+                width: 100%;
             }
         }
     }
@@ -243,8 +246,7 @@
                         width: 100%;
 
                         .img {
-                            width: 30vw;
-                            height: 30vw;
+
                         }
 
                         .txt {
@@ -257,11 +259,6 @@
 
         &.guide {
             height: inherit;
-
-            &::after {
-                width: 100%;
-            }
-
             .inr {
                 position: inherit;
                 height: 890px;
@@ -272,6 +269,8 @@
             section{
                 article{
                     width: 100%;
+
+
                 }
             }
         }

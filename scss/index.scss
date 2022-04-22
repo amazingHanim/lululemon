@@ -218,10 +218,11 @@
         @include width();
         display: flex;
         align-items: center;
-        gap: 1vw;
+        gap: 5px;
         height: 850px;
 
         header {
+
             width: 40%;
             height: 100%;
             display: flex;
@@ -275,6 +276,10 @@
             justify-content: space-between;
 
             article {
+                box-sizing: border-box;
+                transition: all 0.2s ease;
+                width: calc(100% / 3);
+                height: 50%;
                 &:hover {
 
                     .imgBox {
@@ -294,24 +299,21 @@
                     }
                 }
 
-                transition: all 0.2s ease;
-
-                width: calc((100% - 2vw)/3);
-                height: 50%;
-
                 .imgBox {
                     transition: all 0.2s ease;
                     // background-color: #000000;
+                    width: 100%;
+
                     height: 75%;
                     overflow: hidden;
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: flex-start;
 
                     position: relative;
 
                     img {
-                        width: 100%;
+                        height: 100%;
                         transition: all 0.2s ease;
 
                     }
@@ -347,11 +349,11 @@
                     transition: all 0.3s ease;
 
 
-                    height: 25%;
+                    height: 90px;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    align-items: flex-start;
+                    align-items: center;
                     padding: 10px 0;
                     gap: 5px;
 
@@ -367,7 +369,7 @@
 
                     ul.color {
                         display: flex;
-                        justify-content: start;
+                        justify-content:center;
                         align-items: center;
                     }
                 }
@@ -602,6 +604,33 @@
         }
     }
 }
+@media screen and (max-width:1000px){
+    .content.new {
+        flex-direction: column;
+        height: inherit;
+        gap: 5px;
+
+    
+        header {
+            width: 100%;
+            height: 300px;
+        }
+    
+        section {
+            width: 100%;
+            article{
+                width: 50%;
+                .imgBox{
+                    height: 50vw;
+
+                    img{
+                    }
+                }
+            }
+            
+        }
+    }
+}
 @media screen and (max-width:768px){
     .content {
         padding: 40px 0;
@@ -619,20 +648,6 @@
     
     }
     
-    .content.new {
-        display: block;
-        height: inherit;
-    
-        header {
-            width: 100%;
-            height: 300px;
-        }
-    
-        section {
-            width: 100%;
-    
-        }
-    }
     
     .content.banner {
         header.h_white {

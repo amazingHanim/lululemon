@@ -356,6 +356,12 @@ ul.color {
 }
 
 @media screen and (max-width : 768px) {
+    .moreBtn{
+        padding: 0 20px;
+        font-size: 14px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
 
     //메인메뉴와 아이콘들 사라짐
     .hdrWrap {

@@ -323,6 +323,12 @@ ul.color li.ivory {
 }
 
 @media screen and (max-width: 768px) {
+  .moreBtn {
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
   .hdrWrap header {
     border-bottom: none;
   }

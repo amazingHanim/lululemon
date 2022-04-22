@@ -190,7 +190,7 @@
 }
 
 .content.program section article .img {
-  height: 250px;
+  height: 15vw;
   width: 100%;
   overflow: hidden;
   display: -webkit-box;
@@ -205,7 +205,7 @@
 }
 
 .content.program section article .img img {
-  height: 100%;
+  width: 100%;
 }
 
 .content.program section article .txt {
@@ -233,8 +233,11 @@
   .content.program section article {
     width: 50%;
   }
+  .content.program section article .img {
+    height: 30vw;
+  }
   .content.guide::after {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -249,15 +252,8 @@
   .content.mapAttack section ul li {
     width: 100%;
   }
-  .content.mapAttack section ul li .img {
-    width: 30vw;
-    height: 30vw;
-  }
   .content.guide {
     height: inherit;
-  }
-  .content.guide::after {
-    width: 100%;
   }
   .content.guide .inr {
     position: inherit;
