@@ -128,6 +128,7 @@ ul.color li.ivory {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 10px;
   border-bottom: solid 0.5px #fff;
 }
 
@@ -149,16 +150,16 @@ ul.color li.ivory {
 }
 
 .hdrWrap header ul.mainMenu {
-  width: 50%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  position: relative;
 }
 
-.hdrWrap header ul.mainMenu li {
-  position: relative;
+.hdrWrap header ul.mainMenu li .title span {
   font-family: "Noto Sans KR";
   font-size: 16px;
   line-height: 60px;
@@ -169,16 +170,26 @@ ul.color li.ivory {
   transition: all 0.3s;
 }
 
-.hdrWrap header ul.mainMenu li.on::after {
+.hdrWrap header ul.mainMenu ul.subMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
-  content: "";
-  display: block;
-  bottom: -2.5px;
-  left: 0;
   width: 100%;
-  height: 5px;
-  background-color: #fff;
-  border-radius: 2.5px;
+  top: 60px;
+  left: 0;
+}
+
+.hdrWrap header ul.mainMenu ul.subMenu li {
+  line-height: 80px;
+  color: #fff;
+  opacity: 0.8;
+  line-height: 60px;
 }
 
 .hdrWrap header .icons {
@@ -198,51 +209,14 @@ ul.color li.ivory {
   color: #fff;
 }
 
-.navWrap {
-  position: absolute;
-  width: 100%;
-  top: 60px;
-  left: 0;
-  height: 80px;
-  z-index: 100;
+.hdrWrap header .hamBtn {
+  height: 60px;
+  display: none;
+  width: 10%;
 }
 
-.navWrap nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 4vw;
-  width: 100%;
-}
-
-.navWrap nav ul li {
-  position: relative;
-  font-family: "Noto Sans KR";
-  font-size: 14px;
-  line-height: 50px;
+.hdrWrap header .hamBtn i {
   color: #fff;
-  font-weight: 300;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.navWrap nav ul li:hover::after {
-  position: absolute;
-  content: "";
-  display: block;
-  bottom: -2.5px;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background-color: #fff;
-  border-radius: 2.5px;
 }
 
 .subBannerWrap {
@@ -318,16 +292,87 @@ ul.color li.ivory {
 }
 
 @media screen and (max-width: 1000px) {
-  body .hdrWrap header ul.mainMenu {
+  .hdrWrap header ul.mainMenu {
     width: 60%;
   }
-  body .hdrWrap header ul.mainMenu li {
+  .hdrWrap header ul.mainMenu li {
     font-size: 14px;
+  }
+  .hdrWrap header ul.mainMenu ul.subMenu {
+    display: none;
+  }
+  .subBannerWrap {
+    height: 650px;
+  }
+  .subBannerWrap .subBanner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .subBannerWrap .subBanner header {
+    width: 100%;
+  }
+  .subBannerWrap .subBanner section {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .hdrWrap header ul.mainMenu, .hdrWrap header .icons {
+  .hdrWrap header {
+    border-bottom: none;
+  }
+  .hdrWrap header ul.mainMenu,
+  .hdrWrap header .icons {
     display: none;
+  }
+  .hdrWrap header .hamBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hdrWrap.on {
+    background-color: #000000;
+    height: 100vh;
+    overflow: scroll;
+  }
+  .hdrWrap.on header ul.mainMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 60px;
+    width: 85%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    position: inherit;
+    text-align: center;
+  }
+  .hdrWrap.on header ul.mainMenu > li {
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+  }
+  .hdrWrap.on header ul.mainMenu > li div.title {
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+  }
+  .hdrWrap.on header ul.mainMenu > li ul.subMenu {
+    position: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }

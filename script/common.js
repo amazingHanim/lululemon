@@ -2,24 +2,28 @@ $(function(){
     function mainMenu() {
         var $hdrWrap = $('.hdrWrap'),
             $mainMenuList = $hdrWrap.find(".mainMenu"),
-            $mainMenu = $mainMenuList.children();
-        var $navWrap = $('.navWrap'),
-            $navList = $navWrap.children(),
-            $nav = $navList.children("ul");
-            $nav.hide();
+            $mainMenu = $mainMenuList.children(),
+            $subMenuList = $mainMenu.find(".subMenu"),
+            $subMenu = $subMenuList.children(),
+            $hamBtn = $hdrWrap.find(".hamBtn");
+
+            $subMenuList.hide();
 
 
+        
+        $hamBtn.on("click",function (){
+            $hdrWrap.toggleClass("on")
+        });
 
         $mainMenu.on("mouseenter", function () {
             num = $(this).index();
-            $mainMenu.removeClass("on")
-            $(this).addClass("on");
-            $nav.hide();
-            $nav.eq(num).fadeIn(300);
+            $subMenuList.hide()
+            $(this).find($subMenuList).slideDown(300)
+
         });
-        $navWrap.on("mouseleave", function () {
-            $mainMenu.removeClass("on")
-            $nav.hide();
+        $hdrWrap.on("mouseleave", function () {
+            $subMenuList.hide()
+
         });
 
     }

@@ -28,6 +28,7 @@
   height: 20px;
   top: 3px;
   left: 0px;
+  background-image: url(../images/check.png);
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -38,10 +39,10 @@
 }
 
 .content section h4 {
-  margin-top: 30px;
   font-family: "Noto Sans KR";
   font-size: 21px;
   font-weight: 400;
+  line-height: 30px;
 }
 
 .content section p {
@@ -58,7 +59,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 40px;
 }
 
 .content.mapAttack section ul li {
@@ -92,6 +93,7 @@
 
 .content.mapAttack section ul li .txt h4 {
   color: #292929;
+  margin-top: 30px;
 }
 
 .content.guide {
@@ -99,7 +101,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 930px;
+  height: 890px;
   width: 100%;
   position: relative;
 }
@@ -146,10 +148,30 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 40px;
 }
 
 .content.guide .inr section ul li {
-  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.content.guide .inr section ul li .icon {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  border: solid 1px #fff;
 }
 
 .content.program section {
@@ -158,25 +180,36 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 5px;
 }
 
 .content.program section article {
-  width: calc(50% - 5px);
+  width: calc((100% / 3));
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .content.program section article .img {
-  height: 300px;
+  height: 250px;
   width: 100%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .content.program section article .img img {
-  width: 100%;
+  height: 100%;
 }
 
 .content.program section article .txt {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .content.program section article .txt h4 {
@@ -194,4 +227,44 @@
 
 .content.program section article .txt span.account {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+  .content.program section article {
+    width: 50%;
+  }
+  .content.guide::after {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content.mapAttack section ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+  .content.mapAttack section ul li {
+    width: 100%;
+  }
+  .content.mapAttack section ul li .img {
+    width: 30vw;
+    height: 30vw;
+  }
+  .content.guide {
+    height: inherit;
+  }
+  .content.guide::after {
+    width: 100%;
+  }
+  .content.guide .inr {
+    position: inherit;
+    height: 890px;
+    padding: 0;
+  }
+  .content.program section article {
+    width: 100%;
+  }
 }
