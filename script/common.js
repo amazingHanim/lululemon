@@ -13,6 +13,7 @@ $(function(){
         
         $hamBtn.on("click",function (){
             $hdrWrap.toggleClass("on")
+
         });
 
         $mainMenu.on("mouseenter", function () {

@@ -338,20 +338,7 @@ ul.color {
             }
         }
     }
-    .subBannerWrap{
-        height: 650px;
-        .subBanner{
-            flex-direction: column;
-            justify-content: center;
-            gap: 30px;
-            header{
-                width: 100%;
-            }
-            section{
-                width: 100%;
-            }
-        }
-    }
+
 
 }
 
@@ -426,6 +413,19 @@ ul.color {
         }
     }
 
-
+    .subBannerWrap{
+        height: 650px;
+        .subBanner{
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            header{
+                width: 100%;
+            }
+            section{
+                width: 100%;
+            }
+        }
+    }
 
 }

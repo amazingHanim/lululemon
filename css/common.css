@@ -301,25 +301,6 @@ ul.color li.ivory {
   .hdrWrap header ul.mainMenu ul.subMenu {
     display: none;
   }
-  .subBannerWrap {
-    height: 650px;
-  }
-  .subBannerWrap .subBanner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 30px;
-  }
-  .subBannerWrap .subBanner header {
-    width: 100%;
-  }
-  .subBannerWrap .subBanner section {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -380,5 +361,24 @@ ul.color li.ivory {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .subBannerWrap {
+    height: 650px;
+  }
+  .subBannerWrap .subBanner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .subBannerWrap .subBanner header {
+    width: 100%;
+  }
+  .subBannerWrap .subBanner section {
+    width: 100%;
   }
 }

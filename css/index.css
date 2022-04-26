@@ -109,7 +109,7 @@
 
 .content.best section .ovrgrid ul.itemList > li.on .txtBox h4 {
   font-size: 18px;
-  z-index: 1000;
+  z-index: 1;
   line-height: 20px;
 }
 
@@ -584,61 +584,27 @@
   margin: 20px 0;
 }
 
-.content.acc {
-  background-color: #292929;
+.content.content.newsLetter {
+  position: relative;
+  background-color: #f2f2f2;
 }
 
-.content.acc div.accInner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 300px;
-  gap: 1vw;
-}
-
-.content.acc div.accInner header {
-  width: 30%;
-  text-align: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #fff;
-}
-
-.content.acc div.accInner section {
-  width: 70%;
-}
-
-.content.acc div.accInner section ul.imgBox {
+.content.content.newsLetter section {
   width: 100%;
+}
+
+.content.content.newsLetter section form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  gap: 1vw;
 }
 
-.content.acc div.accInner section ul.imgBox li.img {
-  height: 220px;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.content.content.newsLetter section form .inputGroup {
+  width: 50%;
 }
 
-.content.acc div.accInner section ul.imgBox li.img img {
-  width: 100%;
+.content.content.newsLetter section form ul.formGroup {
+  width: 50%;
 }
 
 @media screen and (max-width: 1750px) {
