@@ -5,7 +5,8 @@ $num : side();
 
 // various  fin
 .hdrWrap>header,
-.navWrap>nav {
+.navWrap>nav,
+.ftrWrap>footer{
     @include width();
 
     &.nowth {
@@ -39,20 +40,28 @@ $num : side();
     line-height: 40px;
     background-color: $black;
     border: none;
+    border-radius: 50px 0 50px 0;
     color: #fff;
     font-family: "Noto Sans KR";
     font-weight: 300;
+    transition:all 0.3s;
     cursor: pointer;
+    &:hover{
+        letter-spacing: 2px;
+    }
 
     &.line {
         color: #fff;
-        border: solid 1px #fff;
+        border-right: solid 1px #fff;
+        border-bottom: solid 1px #fff;
         background-color: transparent;
+
     }
 
     &.lineB {
         color: $black;
-        border: solid 1px $black;
+        border-right: solid 1px $black;
+        border-bottom: solid 1px $black;
         background-color: transparent;
     }
 }
@@ -205,54 +214,6 @@ ul.color {
     }
 }
 
-// .navWrap {
-//     position: absolute;
-//     width: 100%;
-//     top: 60px;
-//     left: 0;
-//     height: 80px;
-//     z-index: 100;
-
-//     nav {
-//         ul {
-
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             gap: 4vw;
-
-//             width: 100%;
-
-//             li {
-//                 position: relative;
-//                 font-family: "Noto Sans KR";
-//                 font-size: 14px;
-//                 line-height: 50px;
-//                 color: #fff;
-//                 font-weight: 300;
-//                 text-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.5);
-//                 transition: all 0.3s;
-
-//                 &:hover {
-//                     &::after {
-//                         position: absolute;
-//                         content: "";
-//                         display: block;
-//                         bottom: -2.5px;
-//                         left: 0;
-//                         width: 100%;
-//                         height: 5px;
-//                         background-color: #fff;
-//                         border-radius: 2.5px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-// }
-// subMenuCommon start
-
 .subBannerWrap {
     width: 100%;
     height: 650px;
@@ -318,6 +279,76 @@ ul.color {
     }
 }
 
+.ftrWrap {
+    footer {
+        .ftop {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 40px 0;
+            dl {
+                dt {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+
+                dd {
+                    line-height: 30px;
+
+                }
+                &.connect{
+                    dd{
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                }
+            }
+        }
+
+        .fbtm {
+            border-top:solid 1px #999;
+            padding: 40px 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            .fbtm_left {
+                .company {
+                    line-height: 20px;
+
+                }
+
+                .copy {
+                    margin-top: 15px;
+                    line-height: 30px;
+
+                }
+
+                ul.more {
+                    margin-top: 15px;
+                    display: flex;
+                    li {
+                        line-height: 30px;
+                        margin-right: 20px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .fbtm_right{
+                width: 30%;
+                .image{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        border: solid 1px #999;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 @media screen and (max-width : 1000px) {
@@ -338,12 +369,24 @@ ul.color {
             }
         }
     }
+    .ftrWrap{
+        footer{
+            .ftop{
+                dl{
+                    width: 50%;
+                }
+            }
+            .fbtm{
+                flex-direction: column;
+            }
+        }
+    }
 
 
 }
 
 @media screen and (max-width : 768px) {
-    .moreBtn{
+    .moreBtn {
         padding: 0 20px;
         font-size: 14px;
         line-height: 30px;
@@ -355,6 +398,7 @@ ul.color {
 
         header {
             border-bottom: none;
+
             ul.mainMenu,
             .icons {
                 display: none;
@@ -370,7 +414,7 @@ ul.color {
         }
     }
 
-    .hdrWrap.on {        
+    .hdrWrap.on {
         background-color: #000000;
 
         height: 100vh;
@@ -413,17 +457,32 @@ ul.color {
         }
     }
 
-    .subBannerWrap{
+    .subBannerWrap {
         height: 650px;
-        .subBanner{
+
+        .subBanner {
             flex-direction: column;
             justify-content: center;
             gap: 30px;
-            header{
+
+            header {
                 width: 100%;
             }
-            section{
+
+            section {
                 width: 100%;
+            }
+        }
+    }
+    .ftrWrap{
+        footer{
+            .ftop{
+                dl{
+                    width: 100%;
+                }
+            }
+            .fbtm{
+                flex-direction: column;
             }
         }
     }

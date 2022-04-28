@@ -444,26 +444,10 @@
 
 .content.banner {
   margin: 80px 0;
-  position: relative;
   background-image: url(../images/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.content.banner::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/curve.png);
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-size: contain;
-  z-index: 100;
 }
 
 .content.banner header.h_white {
@@ -473,7 +457,6 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 100px 0;
 }
 
 .content.community section {
@@ -585,26 +568,13 @@
 }
 
 .content.content.newsLetter {
-  position: relative;
-  background-color: #f2f2f2;
+  background-image: url(../images/index.newsletter.png);
+  background-size: cover;
+  background-position-y: -250px;
 }
 
-.content.content.newsLetter section {
-  width: 100%;
-}
-
-.content.content.newsLetter section form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.content.content.newsLetter section form .inputGroup {
-  width: 50%;
-}
-
-.content.content.newsLetter section form ul.formGroup {
-  width: 50%;
+.content.content.newsLetter header {
+  color: #fff;
 }
 
 @media screen and (max-width: 1750px) {
@@ -667,27 +637,5 @@
   }
   .content.community section article .txtBox {
     width: 70%;
-  }
-  .content.acc div.accInner {
-    display: block;
-    height: inherit;
-  }
-  .content.acc div.accInner header {
-    width: 100%;
-    height: 300px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  .content.acc div.accInner section {
-    width: 100%;
-  }
-  .content.acc div.accInner section ul.imgBox {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .content.acc div.accInner section ul.imgBox li.img {
-    width: calc(50% - 1vw);
   }
 }
