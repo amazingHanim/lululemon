@@ -185,6 +185,12 @@ ul.color li.ivory {
   transition: all 0.3s;
 }
 
+.hdrWrap header ul.mainMenu li:last-of-type span {
+  color: #ff0033;
+  font-weight: 500;
+  text-shadow: none;
+}
+
 .hdrWrap header ul.mainMenu ul.subMenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,13 +231,59 @@ ul.color li.ivory {
 }
 
 .hdrWrap header .hamBtn {
-  height: 60px;
   display: none;
-  width: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
 }
 
-.hdrWrap header .hamBtn i {
-  color: #fff;
+.hdrWrap header .hamBtn ul.lines {
+  width: 24px;
+  height: 18px;
+  position: relative;
+}
+
+.hdrWrap header .hamBtn ul.lines li {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  left: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hdrWrap header .hamBtn ul.lines li.line1 {
+  top: 0;
+}
+
+.hdrWrap header .hamBtn ul.lines li.line2 {
+  top: calc(50% - 0.5px);
+  width: 20px;
+}
+
+.hdrWrap header .hamBtn ul.lines li.line3 {
+  bottom: 0;
+}
+
+.hdrWrap header .hamBtn ul.lines.on li.line1 {
+  top: calc(50% - 0.5px);
+  -webkit-transform: rotate(43deg);
+          transform: rotate(43deg);
+}
+
+.hdrWrap header .hamBtn ul.lines.on li.line2 {
+  display: none;
+}
+
+.hdrWrap header .hamBtn ul.lines.on li.line3 {
+  top: calc(50% - 0.5px);
+  -webkit-transform: rotate(-43deg);
+          transform: rotate(-43deg);
 }
 
 .subBannerWrap {

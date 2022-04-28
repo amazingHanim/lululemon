@@ -14,6 +14,7 @@ $(function(){
         
         $hamBtn.on("click",function (){
             $body.toggleClass("on");
+            $(this).children("ul").toggleClass("on")
         });
 
         $mainMenu.on("mouseenter", function () {

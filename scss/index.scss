@@ -414,7 +414,6 @@
                 &:nth-of-type(2) {
                     &::after {
                         background-image: url(../images/index_commu2.png);
-                        background-size: contain;
                     }
                 }
 
@@ -428,7 +427,6 @@
                 &:nth-of-type(4) {
                     &::after {
                         background-image: url(../images/index_commu4.png);
-                        background-size: contain;
 
                     }
                 }
@@ -488,18 +486,20 @@
                     justify-content: center;
 
                     h3 {
-                        font-family: "Raleway";
-                        font-size: 30px;
+                        font-family: "Noto Sans KR";
+                        font-size: 27px;
+                        line-height: 40px;
                         font-weight: 300;
                         margin: 0;
                     }
 
                     span {
+                        font-family: "Noto Sans KR";
                         display: block;
                         opacity: 50%;
                         line-height: 20px;
-                        font-size: 14px;
-                        margin: 20px 0;
+                        font-size: 16px;
+                        margin: 30px 0;
                     }
 
                 }
@@ -616,10 +616,17 @@
 
                 .txtBox {
                     width: 70%;
+                    h3{
+                        line-height: inherit;
+                    }
+                    span {
+                        margin: 10px 0;
+                    }
                 }
             }
         }
     }
+
     .content.newsLetter {
 
         background-position-y:0px !important;
