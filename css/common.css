@@ -165,6 +165,10 @@ ul.color li.ivory {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: relative;
@@ -388,9 +392,6 @@ ul.color li.ivory {
   .hdrWrap header ul.mainMenu li {
     font-size: 14px;
   }
-  .hdrWrap header ul.mainMenu ul.subMenu {
-    display: none;
-  }
   .ftrWrap footer .ftop dl {
     width: 50%;
   }
@@ -427,12 +428,20 @@ ul.color li.ivory {
         -ms-flex-align: center;
             align-items: center;
   }
-  .hdrWrap.on {
-    background-color: #000000;
-    height: 100vh;
-    overflow: scroll;
+  body.on {
+    position: relative;
+    overflow: hidden;
   }
-  .hdrWrap.on header ul.mainMenu {
+  body.on .hdrWrap {
+    background-color: #000000;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  body.on .hdrWrap header ul.mainMenu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -448,13 +457,13 @@ ul.color li.ivory {
     position: inherit;
     text-align: center;
   }
-  .hdrWrap.on header ul.mainMenu > li {
+  body.on .hdrWrap header ul.mainMenu > li {
     border-bottom: solid 1px rgba(255, 255, 255, 0.5);
   }
-  .hdrWrap.on header ul.mainMenu > li div.title {
+  body.on .hdrWrap header ul.mainMenu > li div.title {
     border-bottom: solid 1px rgba(255, 255, 255, 0.5);
   }
-  .hdrWrap.on header ul.mainMenu > li ul.subMenu {
+  body.on .hdrWrap header ul.mainMenu > li ul.subMenu {
     position: inherit;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

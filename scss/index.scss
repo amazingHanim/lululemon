@@ -514,6 +514,7 @@
     &.content.newsLetter {
         margin: 80px 0;
         background-image: url(../images/index.newsletter.png);
+        background-repeat: no-repeat;
         background-size: cover;
         background-position-y: -250px;
         header {
@@ -618,5 +619,11 @@
                 }
             }
         }
+    }
+    .content.newsLetter {
+
+        background-position-y:0px !important;
+
+
     }
 }
