@@ -568,6 +568,7 @@
 }
 
 .content.content.newsLetter {
+  margin: 80px 0;
   background-image: url(../images/index.newsletter.png);
   background-size: cover;
   background-position-y: -250px;
