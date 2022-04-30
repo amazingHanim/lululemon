@@ -154,10 +154,21 @@ ul.color li.ivory {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .hdrWrap header h1.logo img {
   height: 60%;
+}
+
+.hdrWrap header h1.logo a {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
 }
 
 .hdrWrap header ul.mainMenu {
@@ -359,6 +370,7 @@ ul.color li.ivory {
 }
 
 .ftrWrap footer .ftop {
+  border-top: solid 1px #999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
